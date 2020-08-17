@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+</head>
+<body>
+    <form method="POST" action="/calculateTax">
+        Price:    <input name='price' value=''/>
+        </br>
+        HouseType:   <input name='type' value=''/>
+        </br>
+        <button>Calculate Tax</button>
+    </form>
+
+    <% if (tax) { %>
+        Tax to pay for this house is "<%= tax %>"
+    <% } %>
+</body>
+</html>
